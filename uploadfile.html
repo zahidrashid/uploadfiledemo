@@ -1,0 +1,43 @@
+<html>
+<head>
+<!-- <script type="text/javascript" src="jquery-3.1.1.min.js"> </script>
+
+<script type="text/javascript" >
+
+
+
+
+    function test(){
+	        var filename = $("#file").val();
+			
+	        $.ajax({
+	            type: "POST",
+	            url: "addFile.do",
+	            enctype: 'multipart/form-data',
+	            data: {
+	                file: filename
+	            },
+	            success: function () {
+	                alert("Data Uploaded..... ");
+	            }
+	        });
+	 }
+onclick="test();"
+</script> -->
+</head>
+
+<body>
+<form  action="addFile.do" method="post" enctype="multipart/form-data">
+   
+    <input type="file" name="file" id="file" />
+    <input type="submit"  name="uploadbutton"    />
+</form>
+
+
+</body>
+
+
+
+
+
+</html>
